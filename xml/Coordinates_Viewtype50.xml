@@ -160,8 +160,8 @@
 				<left>32</left>
 				<top>0</top>
 				<width>1018</width>
-				<height>60</height>
-				<font>Font36-light</font>
+				<height>40</height>
+				<font>Font33</font>
 				<label>$INFO[ListItem.Label]</label>
 				<textcolor>$VAR[TextColor2]</textcolor>
 			</control>
@@ -177,6 +177,34 @@
 				<include>NonFocusImageFadeAnimation</include>
 				<visible>ListItem.IsCollection</visible>
 			</control>
+
+			<!-- Datetime w Duration h:mm'ss"-->
+			<control type="label">
+				<left>32</left>
+				<top>46</top>
+				<width>1018</width>
+				<height>102</height>
+				<font>Font25</font>
+				<label>$INFO[ListItem.Date] $INFO[ListItem.StartTime(hh:mm)]  $INFO[ListItem.Duration(h)]:$INFO[ListItem.Duration(mm)]'$INFO[ListItem.Duration(ss)]"</label>
+				<textcolor>$VAR[TextColor1]</textcolor>
+				<scroll>True</scroll>
+				<animation effect="fade" start="100" end="50" time="200" tween="cubic" easing="out" reversible="true" condition="!Control.HasFocus(50)">Conditional</animation>
+				<visible>!ListItem.IsFolder+Integer.IsGreater(ListItem.Size,0)+Integer.IsGreater(ListItem.Duration(hh),0)</visible>
+			</control>
+			<!-- Datetime w Duration m'ss"-->
+			<control type="label">
+				<left>32</left>
+				<top>46</top>
+				<width>1018</width>
+				<height>102</height>
+				<font>Font25</font>
+				<label>$INFO[ListItem.Date] $INFO[ListItem.StartTime(hh:mm)]  $INFO[ListItem.Duration(mm)]'$INFO[ListItem.Duration(ss)]"</label>
+				<textcolor>$VAR[TextColor1]</textcolor>
+				<scroll>True</scroll>
+				<animation effect="fade" start="100" end="50" time="200" tween="cubic" easing="out" reversible="true" condition="!Control.HasFocus(50)">Conditional</animation>
+				<visible>!ListItem.IsFolder+Integer.IsGreater(ListItem.Size,0)+Integer.IsEqual(ListItem.Duration(hh),0)</visible>
+			</control>
+
 			<!-- Watched status -->
 			<control type="image">
 				<left>0</left>
@@ -320,7 +348,7 @@
 					<top>0</top>
 					<width>1018</width>
 					<height>120</height>
-					<font>Font72-bold</font>
+					<font>Font54-bold</font>
 					<label>$INFO[ListItem.Label]</label>
 					<textcolor>$VAR[TextColor1]</textcolor>
 					<scroll>True</scroll>
@@ -345,6 +373,34 @@
 					<colordiffuse>$VAR[TextColor1]</colordiffuse>
 					<visible>ListItem.IsCollection</visible>
 				</control>
+
+				<!-- Datetime w Duration h:mm'ss"-->
+				<control type="label">
+					<left>32</left>
+					<top>46</top>
+					<width>1018</width>
+					<height>102</height>
+					<font>Font25</font>
+					<label>$INFO[ListItem.Date] $INFO[ListItem.StartTime(hh:mm)]  $INFO[ListItem.Duration(h)]:$INFO[ListItem.Duration(mm)]'$INFO[ListItem.Duration(ss)]"</label>
+					<textcolor>$VAR[TextColor1]</textcolor>
+					<scroll>True</scroll>
+					<animation effect="fade" start="100" end="50" time="200" tween="cubic" easing="out" reversible="true" condition="!Control.HasFocus(50)">Conditional</animation>
+					<visible>!ListItem.IsFolder+Integer.IsGreater(ListItem.Size,0)+Integer.IsGreater(ListItem.Duration(hh),0)</visible>
+				</control>
+				<!-- Datetime w Duration m'ss"-->
+				<control type="label">
+					<left>32</left>
+					<top>46</top>
+					<width>1018</width>
+					<height>102</height>
+					<font>Font25</font>
+					<label>$INFO[ListItem.Date] $INFO[ListItem.StartTime(hh:mm)]  $INFO[ListItem.Duration(mm)]'$INFO[ListItem.Duration(ss)]"</label>
+					<textcolor>$VAR[TextColor1]</textcolor>
+					<scroll>True</scroll>
+					<animation effect="fade" start="100" end="50" time="200" tween="cubic" easing="out" reversible="true" condition="!Control.HasFocus(50)">Conditional</animation>
+					<visible>!ListItem.IsFolder+Integer.IsGreater(ListItem.Size,0)+Integer.IsEqual(ListItem.Duration(hh),0)</visible>
+				</control>
+
 				<!-- Watched status -->
 				<control type="image">
 					<left>0</left>

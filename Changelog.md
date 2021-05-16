@@ -2,6 +2,13 @@
 
 ---
 
+**_v18.5.0.1 - May 2021_**
+
+_New_
+- add Duration on list(Modified Coordinates_Viewtype50.xml, Font.xml)
+
+---
+
 **_v18.5.0 - November 2020_**
 
 _Improved_
