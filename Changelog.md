@@ -2,6 +2,13 @@
 
 ---
 
+**_v19.0.0.1_**
+
+_New_
+- add Duration on list
+
+---
+
 **_v19.0.0_**
 
 _New_

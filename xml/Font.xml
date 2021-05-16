@@ -266,6 +266,24 @@
 			<size>21</size>
 		</font>
 
+		<!-- for Viewtype50 Datetime -->
+		<font>
+			<name>Font54-bold</name>
+			<filename>SourceSansPro-Regular.ttf</filename>
+			<size>54</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>Font54</name>
+			<filename>SourceSansPro-Regular.ttf</filename>
+			<size>54</size>
+		</font>
+		<font>
+			<name>font12</name>
+			<filename>SourceSansPro-Regular.ttf</filename>
+			<size>17</size>
+		</font>
+
 	</fontset>
 
 	<fontset id="Arial">
@@ -572,6 +590,24 @@
 			<filename>Arial.ttf</filename>
 			<size>19</size>
 			<aspect>0.92</aspect>
+		</font>
+
+		<!-- for Viewtype50 Datetime -->
+		<font>
+			<name>Font54-bold</name>
+			<filename>Arial.ttf</filename>
+			<size>54</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>Font54</name>
+			<filename>Arial.ttf</filename>
+			<size>54</size>
+		</font>
+		<font>
+			<name>font12</name>
+			<filename>Arial.ttf</filename>
+			<size>17</size>
 		</font>
 
 	</fontset>
