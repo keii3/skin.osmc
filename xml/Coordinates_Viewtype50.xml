@@ -181,10 +181,10 @@
 			<!-- Datetime w Duration h:mm'ss"-->
 			<control type="label">
 				<left>32</left>
-				<top>46</top>
+				<top>33</top>
 				<width>1018</width>
-				<height>102</height>
-				<font>Font25</font>
+				<height>30</height>
+				<font>Font23</font>
 				<label>$INFO[ListItem.Date] $INFO[ListItem.StartTime(hh:mm)]  $INFO[ListItem.Duration(h)]:$INFO[ListItem.Duration(mm)]'$INFO[ListItem.Duration(ss)]"</label>
 				<textcolor>$VAR[TextColor1]</textcolor>
 				<scroll>True</scroll>
@@ -194,10 +194,10 @@
 			<!-- Datetime w Duration m'ss"-->
 			<control type="label">
 				<left>32</left>
-				<top>46</top>
+				<top>33</top>
 				<width>1018</width>
-				<height>102</height>
-				<font>Font25</font>
+				<height>20</height>
+				<font>Font12</font>
 				<label>$INFO[ListItem.Date] $INFO[ListItem.StartTime(hh:mm)]  $INFO[ListItem.Duration(mm)]'$INFO[ListItem.Duration(ss)]"</label>
 				<textcolor>$VAR[TextColor1]</textcolor>
 				<scroll>True</scroll>
